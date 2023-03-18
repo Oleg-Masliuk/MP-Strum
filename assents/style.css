@@ -1,0 +1,205 @@
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 0;
+    justify-content: space-between;
+    background: linear-gradient(98deg, #1a69c9 0.07%, #ece86bdb 70%);
+}
+body {
+    background: rgb(194, 221, 244);
+}
+.header_logo {
+    position: absolute;
+    max-width: 90px;
+    z-index: 1;
+}
+.header_title {
+    margin-left: 36px;
+    font-family: 'Lobster', cursive;
+    color:rgb(53, 53, 179);
+    z-index: 10;
+    font-weight: 700;
+    font-size: 30px;
+}
+.header_choise {
+    display: flex;
+    gap: 30px; 
+    list-style: none;
+}
+.header_button {
+    text-decoration: none; 
+    font-weight: 400;
+    font-size: 18px;
+}
+.header_button:hover {
+    text-decoration: underline rgb(3, 9, 96);;
+    color: rgb(3, 9, 96);
+}
+.header_button_language {
+}
+.header_language_US, .header_language_UK {
+    margin-right: 10px;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    background-position: center;
+    background-size: 200%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none; 
+}
+.header_language_US {
+   background-image:url(./imeges/header/flagUK.png); 
+}
+.header_language_UK {
+   background-image:url(./imeges/header/flagUA.png); 
+}
+/*about company*/
+.company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./imeges/company/building.gif);
+    background-position: center;
+    background-size: 100%;
+}
+.company_title {
+    margin: 180px 0 180px 0;
+    color:rgb(53, 53, 179);
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+    font-size: 60px;
+}
+.about_company {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.company_discription {
+    padding: 0 30px 0 30px;
+    text-align:justify;
+    line-height: 130%;
+    font-size: 20px; 
+    margin-top: 50px;
+    font-family: 'Crimson Text', serif;
+}
+/*our project*/
+.project { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_project {
+    margin-bottom: 50px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 46px; 
+    margin-top: 50px;
+}
+.project_all {
+    overflow:hidden;
+    display: flex;
+    list-style: none;
+    width: 800px;
+    justify-content: end;
+}
+.project_name {
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+.photo_project {   
+    width: 800px;
+}
+.project_about {
+   position: relative;    
+   animation-name: photo;
+    animation-duration: 40s;
+    animation-iteration-count:infinite;
+    left: 0px; 
+}
+@keyframes photo {
+    5% {left: 800px}
+    10% {left: 800px}
+    15% {left: 1600px}
+    20% {left: 1600px}
+    25% {left: 2400px}
+    30% {left: 2400px}
+    35% {left: 3200px}
+    40% {left: 3200px}
+    45% {left: 4000px}
+    50% {left: 4000px}
+    55% {left: 3200px}
+    60% {left: 3200px}
+    65% {left: 2400px}
+    70% {left: 2400px}
+    75% {left: 1600px}
+    80% {left: 1600px}
+    85% {left: 800px}
+    90% {left: 800px}
+    95% {left: 0px}
+    100% {left: 0px}
+}
+/*services*/
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.servicec_title {
+    font-size: 46px;
+    font-family: 'Lobster', cursive;
+}
+.service_block{
+    display: flex;
+    margin: 30px;
+}
+.service_name {
+    padding: 10px;
+    font-size: 36px;
+}
+.service_discription_text {
+    font-size: 20px;
+}
+.service_discription {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.service_img{
+    max-width: 500px;
+    margin: 50px;
+}
+footer{
+    display: flex;
+    background: rgb(89, 130, 181);
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contacs{
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.footer_form {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.footer_button {
+    background-color: rgb(246, 184, 28);
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    max-width: 150px;
+    cursor: pointer;
+}
+
